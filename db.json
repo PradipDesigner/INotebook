@@ -1,8 +1,18 @@
 {
   "notes": [
-    
+    {
+      "title": "task edited",
+      "description": "i am going to market tomorrow ",
+      "userId": "c4b3",
+      "id": "b734"
+    }
   ],
   "users": [
-    
+    {
+      "id": "c4b3",
+      "name": "Pradip",
+      "username": "pradip@gmail.com",
+      "password": "12345"
+    }
   ]
 }
