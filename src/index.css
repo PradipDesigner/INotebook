@@ -1,0 +1,19 @@
+.darkMode{
+    background-color: black;
+    color: white;
+}
+.error-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #cccccc38;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.navbar-brand{font-family: cursive;}
+.main{
+    height: calc(100vh - 96px);
+    padding: 40px 0px 30px 0;
+}
