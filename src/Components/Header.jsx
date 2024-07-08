@@ -30,16 +30,18 @@ const Header = ({ mode, userName }) => {
                 <NavLink className="nav-link active" to="/">Home</NavLink>
               </li>
             </ul>
+
+            <div className="d-flex align-items-center ms-auto">
+              <button className="btn btn-dark mx-2" onClick={mode}><i className="bi bi-moon-fill"></i></button>
+              {!localStorage.getItem('user') ?
+                <>
+                  <NavLink to="/login"><button className="btn btn-primary mx-2" >Login</button></NavLink>
+                  <NavLink to="/signup"><button className="btn btn-primary mx-2">SignUp</button></NavLink></>
+                : <><NavLink className="nav-link text-white mx-3"> Hi, {capitalize(userName)}</NavLink>
+                  <button className="btn btn-sm btn-outline-secondary ms-2" onClick={LogOut}><i className="bi bi-box-arrow-in-left"></i></button></>}
+            </div>
           </div>
-          <div className="d-flex align-items-center">
-            <button className="btn btn-dark mx-2" onClick={mode}><i className="bi bi-moon-fill"></i></button>
-            {!localStorage.getItem('user') ?
-              <>
-                <NavLink to="/login"><button className="btn btn-primary mx-2" >Login</button></NavLink>
-                <NavLink to="/signup"><button className="btn btn-primary mx-2">SignUp</button></NavLink></>
-              : <><NavLink className="nav-link text-white mx-3"> Hi, {capitalize(userName)}</NavLink>
-                <button className="btn btn-sm btn-outline-secondary ms-2" onClick={LogOut}><i className="bi bi-box-arrow-in-left"></i></button></>}
-          </div>
+
         </div >
       </nav >
     </>

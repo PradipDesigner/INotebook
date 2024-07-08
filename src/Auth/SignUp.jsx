@@ -16,7 +16,7 @@ function SignUp() {
     event.preventDefault();
     const userResponse = await fetch('http://localhost:3000/users')
     const users = await userResponse.json()
-    console.log(users)
+    // console.log(users)
     const checkExitsUser = users.some((exitingUser) => exitingUser.username === user.username)
     if (checkExitsUser) {
       setError("This Email Already ragister Please Login")
@@ -25,7 +25,7 @@ function SignUp() {
       }, 5000);
     }
     else {
-      console.log("user not ragister")
+      // console.log("user not ragister")
       const response = await fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {

@@ -25,7 +25,7 @@ function NoteInput({ addNote }) {
       const userData = JSON.parse(localdata)
       if(userData && userData.id){
          userId = userData.id
-        console.log(userId)
+        // console.log(userId)
       }
     }
     addNote(NewHeading, NewDesc, userId)

@@ -41,7 +41,7 @@ function Note() {
       headers: { 'Content-Type': 'application/json' }
     })
     const result = await dataResponse.json()
-    console.log(result)
+    // console.log(result)
     setNotelist(notes => [...notes, { title: result.title, description: result.description, id: result.id, userId: result.userId }])
     }
     else{
