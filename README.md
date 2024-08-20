@@ -10,5 +10,5 @@ Currently, two official plugins are available:
 
 
 
-Note : - if you want tu run api than first of all run db.json file follow this command == (npx json-server --watch db.json)
+Note : - if you want to run api than first of all you need server run to follow this command == (npx json-server --watch db.json)
 than you signup page and login after you add some task .
