@@ -48,7 +48,7 @@ function SignUp() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6 mx-auto">
+        <div className="col-md-8 col-lg-6 mx-auto">
           <h5 className='mb-3'>SignUp to INotebook</h5>
           {error && <h6 className='text-success text-center mb-3'>{error}</h6>}
           <form onSubmit={SignUp}>

@@ -45,7 +45,7 @@ function Note() {
     setNotelist(notes => [...notes, { title: result.title, description: result.description, id: result.id, userId: result.userId }])
     }
     else{
-      alert("Please Login or SignUp than you add Note.")
+      alert("Please Login or SignUp than you can add Note.")
     }
   }
   const deleteList = async (listId) => {
@@ -112,11 +112,11 @@ function Note() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <h3 className='mb-3'>Add your Note!</h3>
             <NoteInput addNote={addNote} />
           </div>
-          <div className="col-md-6 mt-5">
+          <div className="col-md-6 col-lg-8 mt-5">
             {noteList.length === 0 ? (<Error msg={message} />) : <NoteList lists={noteList} deleteItem={deleteList} EditNote={HandleEditNote} />}
           </div>
         </div>
