@@ -43,7 +43,7 @@ function Login({setUserName}) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-8 col-lg-6 mx-auto">
+        <div className="col-md-6 col-lg-6 mx-auto">
           <h5 className='mb-3'>Login For Acess INotebook</h5>
           {error && <h6 className='text-danger text-center fw-bold mb-3'>{error}</h6>}
           {SuccessMsg && <h6 className='text-success text-center'>{SuccessMsg}</h6>}

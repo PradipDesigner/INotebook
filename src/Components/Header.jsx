@@ -31,12 +31,12 @@ const Header = ({ mode, userName }) => {
               </li>
             </ul>
 
-            <div className="d-flex align-items-center ms-auto">
-              <button className="btn btn-dark mx-2" onClick={mode}><i className="bi bi-moon-fill"></i></button>
+            <div className="align-items-lg-center align-items-start d-flex flex-column flex-lg-row gap-3 gap-lg-0 ms-auto">
+              <button className="btn btn-dark mx-0 mx-lg-2" onClick={mode}><i className="bi bi-moon-fill"></i></button>
               {!localStorage.getItem('user') ?
                 <>
-                  <NavLink to="/login"><button className="btn btn-primary mx-2" >Login</button></NavLink>
-                  <NavLink to="/signup"><button className="btn btn-primary mx-2">SignUp</button></NavLink></>
+                  <NavLink to="/login"><button className="btn btn-primary mx-0 mx-lg-2" >Login</button></NavLink>
+                  <NavLink to="/signup"><button className="btn btn-primary mx-0 mx-lg-2">SignUp</button></NavLink></>
                 : <><NavLink className="nav-link text-white mx-3"> Hi, {capitalize(userName)}</NavLink>
                   <button className="btn btn-sm btn-outline-secondary ms-2" onClick={LogOut}><i className="bi bi-box-arrow-in-left"></i></button></>}
             </div>
